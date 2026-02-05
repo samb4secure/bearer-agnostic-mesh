@@ -10,6 +10,10 @@ BAM is designed for environments where connectivity is intermittent, infrastruct
 
 BAM is a bearer-agnostic, delay-tolerant mesh for low-throughput data exchange. Devices enrol into a shared mission group and become peers in a mesh. Data is exchanged opportunistically when peers encounter one another within the mesh and data will be carried and forwarded through intermediate devices until it reaches its destination or expires. The mesh logic is independent of the underlying transport. BAM can operate over Bluetooth, peer-to-peer Wi-Fi, sidecar radios, or any bearer capable of supporting a bidirectional byte stream.
 
+## What BAM is NOT
+
+BAM is not an app or an answer to how to securely communicate with your peers, it is a communications methodology. Each message carries an application-defined payload identified by an application ID. BAM handles identity, encryption, forwarding, acknowledgements, and expiry. Applications define payload format and semantics. 
+
 ---
 
 ## Features
@@ -38,8 +42,7 @@ BAM does not assume a single transport. Different bearers have different charact
 - BAM allows missions to specify which bearers are acceptable and prioritised.
 - Applications are expected to choose payload sizes and behaviours that match the available bearer.
 
-
-BAM is a communications methodology, not a single application. Each message carries an application-defined payload identified by an application ID. BAM handles identity, encryption, forwarding, acknowledgements, and expiry. Applications define payload format and semantics. This allows BAM to carry:
+BAM can support:
 - group and private messages
 - file and photo transfers
 - position reports
