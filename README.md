@@ -1,6 +1,6 @@
 # BAM — Bearer-Agnostic Mesh
 
-BAM is a decentralised communications layer for off-grid environments. It data exchange without cellular networks, internet access, or central servers by forming an opportunistic mesh over whatever local connectivity is available.
+BAM is a decentralised communications layer for off-grid environments. It enables data exchange without cellular networks, internet access, or central servers by forming an opportunistic mesh over whatever local connectivity is available.
 
 BAM is designed for environments where connectivity is intermittent, infrastructure cannot be assumed, and reliability must be achieved without trusting the network.
 
